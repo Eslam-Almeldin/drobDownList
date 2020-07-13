@@ -1,0 +1,116 @@
+:root {
+  --first-color: #ee935e;
+  --secound-color: #e6b8a2;
+}
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+body {
+  background: #774936;
+}
+
+ul {
+  list-style-type: none;
+}
+
+.list {
+  width: 100%;
+  max-width: 360px;
+  margin: 30px auto 20px;
+  background-color: #fff;
+}
+
+.list .linked {
+  cursor: pointer;
+  display: block;
+  padding: 15px;
+  color: var(--first-color);
+  font-size: 18px;
+  font-weight: 700;
+  text-transform: capitalize;
+  border-bottom: 1px solid #ccc;
+  position: relative;
+  -webkit-transition: all 0.4s ease;
+  -o-transition: all 0.4s ease;
+  transition: all 0.4s ease;
+}
+
+.list li:last-child .linked {
+  border-bottom: 0;
+}
+
+.list li i {
+  position: absolute;
+  top: 16px;
+  left: 12px;
+  font-size: 18px;
+  color: var(--first-color);
+  -webkit-transition: all 0.4s ease;
+  -o-transition: all 0.4s ease;
+  transition: all 0.4s ease;
+}
+
+.list li i.fa-chevron-down {
+  right: 12px;
+  left: auto;
+  font-size: 18px;
+}
+
+.list li.open .linked {
+  color: var(--secound-color);
+}
+
+.list li.open i {
+  color: var(--secound-color);
+}
+
+.list li.open i.fa-chevron-down {
+  -webkit-transform: rotate(180deg);
+  -ms-transform: rotate(180deg);
+  -o-transform: rotate(180deg);
+  transform: rotate(180deg);
+}
+
+/* list-items */
+
+.list-items {
+  background-color: var(--first-color);
+  font-size: 14px;
+}
+
+.list-items li {
+  display: block;
+  text-decoration: none;
+  color: #fff;
+  font-size: 15px;
+  text-transform: capitalize;
+  padding: 12px 12px 12px 42px;
+  -webkit-transition: all 0.25s ease;
+  -o-transition: all 0.25s ease;
+  transition: all 0.25s ease;
+  border-bottom: 1px solid #4b4a5e;
+}
+
+.list-items li:hover {
+  background-color: var(--secound-color);
+  cursor: pointer;
+}
+
+.slide-up,
+.slide-down {
+  max-height: 0;
+  overflow-y: hidden;
+  -webkit-transition: max-height 0.5s ease-in-out;
+  -moz-transition: max-height 0.5s ease-in-out;
+  -o-transition: max-height 0.5s ease-in-out;
+  transition: max-height 0.5s ease-in-out;
+}
+
+.slide-down {
+  max-height: 10em;
+}

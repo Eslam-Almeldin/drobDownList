@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+    <title>Drop Down List</title>
+  </head>
+
+  <body>
+    <ul class="list">
+      <li id="content1">
+        <div data-target="slide1" class="linked">
+          brackfast<i class="fa fa-chevron-down"></i>
+        </div>
+        <ul id="slide1" class="list-items slide-up">
+          <li>chicken & cheese</li>
+          <li>tuna & salad</li>
+          <li>pepper & eggs</li>
+        </ul>
+      </li>
+
+      <li id="content2">
+        <div data-target="slide2" class="linked">
+          lunch<i class="fa fa-chevron-down"></i>
+        </div>
+        <ul id="slide2" class="list-items slide-up">
+          <li>tomato double stack</li>
+          <li>dusted royal red shrimp</li>
+          <li>fried chicken</li>
+        </ul>
+      </li>
+
+      <li id="content3">
+        <div data-target="slide3" class="linked">
+          snacks<i class="fa fa-chevron-down"></i>
+        </div>
+        <ul id="slide3" class="list-items slide-up">
+          <li>double egg burger</li>
+          <li>mexican burger</li>
+          <li>savoury platter</li>
+        </ul>
+      </li>
+    </ul>
+
+    <script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
+    <script src="js/list.js"></script>
+  </body>
+</html>
